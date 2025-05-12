@@ -1,0 +1,1017 @@
+ 
+
+<!DOCTYPE html>  
+
+ 
+
+<html lang="ar" dir="rtl">  
+
+ 
+
+<head>  
+
+ 
+
+  <meta charset="UTF-8" />  
+
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+
+ 
+
+  <title>jemenez | التدريب الأونلاين</title>  
+
+ 
+
+  <style>  
+
+ 
+
+    body {  
+
+ 
+
+      margin: 0;  
+
+ 
+
+      font-family: 'Cairo', sans-serif;  
+
+ 
+
+      background-color: #888; /* خلفية رمادية */  
+
+ 
+
+      color: #fff;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    header {  
+
+ 
+
+      background-color: #222; /* أسود داكن للرأس */  
+
+ 
+
+      padding: 10px 20px;  
+
+ 
+
+      display: flex;  
+
+ 
+
+      justify-content: space-between;  
+
+ 
+
+      align-items: center;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    header img {  
+
+ 
+
+      height: 60px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    nav a {  
+
+ 
+
+      color: #fff; /* أبيض لروابط التنقل */  
+
+ 
+
+      text-decoration: none;  
+
+ 
+
+      margin: 0 15px;  
+
+ 
+
+      font-weight: bold;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .hero {  
+
+ 
+
+      background: linear-gradient(to right, #555, #222);  
+
+ 
+
+      padding: 100px 20px;  
+
+ 
+
+      text-align: center;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .hero h2 {  
+
+ 
+
+      font-size: 36px;  
+
+ 
+
+      margin-bottom: 20px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .hero p {  
+
+ 
+
+      font-size: 18px;  
+
+ 
+
+      color: #ddd;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .about {  
+
+ 
+
+      background-color: #222;  
+
+ 
+
+      padding: 60px 20px;  
+
+ 
+
+      text-align: center;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .about h3 {  
+
+ 
+
+      font-size: 30px;  
+
+ 
+
+      margin-bottom: 20px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .about p {  
+
+ 
+
+      font-size: 18px;  
+
+ 
+
+      color: #ccc;  
+
+ 
+
+      max-width: 800px;  
+
+ 
+
+      margin: 0 auto;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    /* قسم الباقات */  
+
+ 
+
+    .subscriptions {  
+
+ 
+
+      background-color: #111; /* أسود رمادي داكن */  
+
+ 
+
+      padding: 50px 20px;  
+
+ 
+
+      text-align: center;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .subscriptions h3 {  
+
+ 
+
+      font-size: 28px;  
+
+ 
+
+      margin-bottom: 30px;  
+
+ 
+
+      color: #fff;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .packages {  
+
+ 
+
+      display: flex;  
+
+ 
+
+      justify-content: center;  
+
+ 
+
+      flex-wrap: wrap;  
+
+ 
+
+      gap: 20px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package {  
+
+ 
+
+      background-color: #222;  
+
+ 
+
+      padding: 20px;  
+
+ 
+
+      border-radius: 10px;  
+
+ 
+
+      width: 280px;  
+
+ 
+
+      text-align: center;  
+
+ 
+
+      transition: all 0.3s ease;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package:hover {  
+
+ 
+
+      transform: translateY(-5px);  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package h4 {  
+
+ 
+
+      font-size: 22px;  
+
+ 
+
+      margin-bottom: 15px;  
+
+ 
+
+      color: #fff;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package ul {  
+
+ 
+
+      list-style: none;  
+
+ 
+
+      padding: 0;  
+
+ 
+
+      margin: 0 0 15px 0;  
+
+ 
+
+      text-align: right; /* للعربية */  
+
+ 
+
+      color: #ddd;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package ul li {  
+
+ 
+
+      margin-bottom: 8px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package p {  
+
+ 
+
+      color: #fff;  
+
+ 
+
+      margin-bottom: 10px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package button {  
+
+ 
+
+      background-color: #fff;  
+
+ 
+
+      color: #000;  
+
+ 
+
+      padding: 10px 20px;  
+
+ 
+
+      border: none;  
+
+ 
+
+      border-radius: 5px;  
+
+ 
+
+      cursor: pointer;  
+
+ 
+
+      font-weight: bold;  
+
+ 
+
+      transition: background-color 0.3s;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .package button:hover {  
+
+ 
+
+      background-color: #ddd;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    /* قسم الواتساب */  
+
+ 
+
+    .whatsapp {  
+
+ 
+
+      position: fixed;  
+
+ 
+
+      bottom: 20px;  
+
+ 
+
+      left: 20px;  
+
+ 
+
+      background-color: #25D366;  
+
+ 
+
+      color: white;  
+
+ 
+
+      padding: 15px 20px;  
+
+ 
+
+      border-radius: 50px;  
+
+ 
+
+      text-decoration: none;  
+
+ 
+
+      font-size: 16px;  
+
+ 
+
+      display: flex;  
+
+ 
+
+      align-items: center;  
+
+ 
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+
+ 
+
+      z-index: 1000;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .whatsapp img {  
+
+ 
+
+      width: 24px;  
+
+ 
+
+      margin-left: 10px;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    /* التذييل */  
+
+ 
+
+    .footer {  
+
+ 
+
+      background-color: #222;  
+
+ 
+
+      text-align: center;  
+
+ 
+
+      padding: 30px 20px;  
+
+ 
+
+      font-size: 16px;  
+
+ 
+
+      color: #aaa;  
+
+ 
+
+    }  
+
+ 
+
+  
+
+ 
+
+    .footer a {  
+
+ 
+
+      color: #ccc;  
+
+ 
+
+      text-decoration: none;  
+
+ 
+
+      margin: 0 10px;  
+
+ 
+
+    }  
+
+ 
+
+  </style>  
+
+ 
+
+</head>  
+
+ 
+
+<body>  
+
+ 
+
+  
+
+ 
+
+  <header>  
+
+ 
+
+    <img src="logo.jpeg" alt="لوجو jemenez" />  
+
+ 
+
+    <nav>  
+
+ 
+
+      <a href="#">الرئيسية</a>  
+
+ 
+
+      <a href="#">عن الفريق</a>  
+
+ 
+
+      <a href="#">تواصل معنا</a>  
+
+ 
+
+    </nav>  
+
+ 
+
+  </header>  
+
+ 
+
+  
+
+ 
+
+  <section class="hero">  
+
+ 
+
+    <h2>مش مجرد تدريب.. دي تجربة كاملة!</h2>  
+
+ 
+
+    <p>احصل على برنامج تدريبي وتغذوي مخصص ليك مع فريق متخصص من المدربين وأخصائيين التغذية.</p>  
+
+ 
+
+  </section>  
+
+ 
+
+  
+
+ 
+
+  <section class="about">  
+
+ 
+
+    <h3>عن الفريق</h3>  
+
+ 
+
+    <p>احنا مش مجرد مدربين بس، احنا فريق كامل لخدمتك! معاك مدربين كبار ليهم خبرة عالية في التخسيس والإعداد البدني، ومعاك كمان متخصصين تغذية شغالين بكفاءة علشان نوصلك لهدفك بأسرع وقت وبشكل آمن.</p>  
+
+ 
+
+  </section>  
+
+ 
+
+  
+
+ 
+
+  <!-- قسم الباقات -->  
+
+ 
+
+  <section class="subscriptions">  
+
+ 
+
+    <h3>اختر باقتك</h3>  
+
+ 
+
+    <div class="packages">  
+
+ 
+
+      <!-- الباقة الشهريّة -->  
+
+ 
+
+      <div class="package">  
+
+ 
+
+        <h4>الباقة الشهريّة <span style="color:#f00;"></span></h4>  
+
+ 
+
+        <ul>  
+
+ 
+
+          <li>نظام تدريبي + غذاءي شخصي</li>  
+
+ 
+
+          <li>متابعة هاتف أسبوعية</li>  
+
+ 
+
+          <li>متابعة شخصية مع مدرب خاص</li>  
+
+ 
+
+        </ul>  
+
+ 
+
+        <p style="font-size: 18px; margin-top:10px;">899 ج.م</p>  
+
+ 
+
+        <p>لفترة محدودة</p>  
+
+ 
+
+        <!-- تعديل الزر ليكون رابط مباشر للموقع -->  
+
+        <button onclick="window.location.href='https://68217fc7c8b5481d8ce90204--fluffy-croquembouche-c031d5.netlify.app/'" style="cursor:pointer;">اشترك الآن</button>  
+
+ 
+
+      </div>  
+
+ 
+
+  
+
+ 
+
+      <!-- باقة الصحاب -->  
+
+ 
+
+      <div class="package">  
+
+ 
+
+        <h4>الباقة الصحاب</h4>  
+
+ 
+
+        <p>عارفين إن الالتزام صعب لوحدك... عملنا باقة الصحاب، اسأل عليها!</p>  
+
+ 
+
+        <button>اسأل عنها</button>  
+
+ 
+
+      </div>  
+
+ 
+
+  
+
+ 
+
+      <!-- الباقة الثانوية -->  
+
+ 
+
+      <div class="package">  
+
+ 
+
+        <h4>الباقة الثانوية</h4>  
+
+ 
+
+        <ul>  
+
+ 
+
+          <li>دعم طبي على مدار 24 ساعة</li>  
+
+ 
+
+          <li>خطة تمرين custom</li>  
+
+ 
+
+          <li>تواصل مباشر مع التيم ليدر على مدار الساعة طوال أيام الأسبوع</li>  
+
+ 
+
+        </ul>  
+
+ 
+
+        <button>تواصل معنا</button>  
+
+ 
+
+      </div>  
+
+ 
+
+    </div>  
+
+ 
+
+  </section>  
+
+ 
+
+  
+
+ 
+
+  <!-- زر واتساب دائمًا موجود -->  
+
+ 
+
+  <a class="whatsapp" href="https://wa.me/201146239234" target="_blank">  
+
+ 
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">  
+
+ 
+
+    تواصل على واتساب  
+
+ 
+
+  </a>  
+
+ 
+
+  
+
+ 
+
+  <div class="footer">  
+
+ 
+
+    <div class="social-icons">  
+
+ 
+
+      <a href="https://www.instagram.com/jemenezzz/?hl=ar#" target="_blank">  
+
+ 
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">  
+
+ 
+
+        تابعنا على إنستجرام  
+
+ 
+
+      </a>  
+
+ 
+
+    </div>  
+
+ 
+
+    <p>البريد الإلكتروني: <a href="mailto:jemenezfit@gmail.com">jemenezfit@gmail.com</a></p>  
+
+ 
+
+    <p>&copy; 2025 jemenez - جميع الحقوق محفوظة</p>  
+
+ 
+
+  </div>  
+
+ 
+
+  
+
+ 
+
+</body>  
+
+ 
+
+</html> 
+
+ 
+
+ 
